@@ -1,0 +1,18 @@
+server:
+  port: 8764
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/leimu?useUnicode=true&characterEncoding=utf-8
+  application:
+    name: springcloud-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
